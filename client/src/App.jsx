@@ -1,10 +1,11 @@
+import Header from "./Header/Header"
 
 function App() {
 
   return (
-    <>
-      <h1>Hello React World</h1>
-    </>
+    <div id="box">
+      <Header />
+    </div>
   )
 }
 
