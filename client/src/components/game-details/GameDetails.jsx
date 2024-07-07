@@ -12,10 +12,7 @@ const GameDetails = () => {
     gameService.getOne(gameId).then(setGame);
 
     commentService.getGameComments().then(setComments);
-
   }, [gameId]);
-
-  console.log(comments)
 
   const addCommentHandler = async (e) => {
     e.preventDefault();
@@ -27,8 +24,7 @@ const GameDetails = () => {
       formData.get("comment")
     );
 
-    console.log(newComment);
-    
+    setComments((state) => [...state, newComment]);
   };
 
   return (
@@ -47,10 +43,12 @@ const GameDetails = () => {
           <h2>Comments:</h2>
           <ul>
             {/* list all comments for current game (If any) */}
-            {comments.map(({username, text, _id}) => (
-                <li key={_id} className="comment">
-                    <p>{username}: {text}</p>
-                </li>
+            {comments.map(({ username, text, _id }) => (
+              <li key={_id} className="comment">
+                <p>
+                  {username}: {text}
+                </p>
+              </li>
             ))}
           </ul>
           {/* Display paragraph: If there are no games in the database */}
