@@ -14,5 +14,13 @@
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Contra_III_game_cover.png/330px-Contra_III_game_cover.png",
         "summary": "Contra III: The Alien Wars[b] is a 1992 run and gun video game developed and published by Konami for the Super Nintendo Entertainment System (SNES).",
         "_id": "74fe1314-3e23-4add-9a06-28a10b70c62a"
+    },
+    "62fc30ef-7012-4859-a113-367e65e0759a": {
+        "title": "Super Mario World",
+        "category": "Platform",
+        "maxLevel": "80",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Super_Mario_World_Coverart.png",
+        "summary": "Super Mario World, known in Japan as Super Mario World: Super Mario Bros. 4,[a] is a 1990 platform game developed by Nintendo EAD and published by Nintendo for the Super Nintendo Entertainment System (SNES).",
+        "_id": "62fc30ef-7012-4859-a113-367e65e0759a"
     }
 }
