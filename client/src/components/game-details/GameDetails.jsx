@@ -11,7 +11,7 @@ const GameDetails = () => {
   useEffect(() => {
     gameService.getOne(gameId).then(setGame);
 
-    commentService.getGameComments().then(setComments);
+    commentService.getGameComments(gameId).then(setComments);
   }, [gameId]);
 
   const addCommentHandler = async (e) => {
